@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: tech_crunch_data
+      host: localhost
+      port: 27017

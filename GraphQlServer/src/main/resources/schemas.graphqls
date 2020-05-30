@@ -1,0 +1,27 @@
+schema {
+    query : Query
+    mutation: Mutation
+}
+
+type Query {
+    getAllArticles: [Article]
+    getArticle(id: String): Article
+}
+
+type Mutation {
+    updateArticle(input: UpdateArticleInput!): Article!
+}
+
+type Article {
+    id: String
+    title: String
+    author: String
+    description: String
+    date: String
+    liked: Boolean
+}
+
+input UpdateArticleInput {
+    id: String!
+    liked: Boolean!
+}
